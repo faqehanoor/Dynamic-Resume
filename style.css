@@ -1,0 +1,115 @@
+/* General Body Styles */
+body{
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(145deg, #6c7cfa, #5967d2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/* Container */
+.container{
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+h1{
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI sans-serif';
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label{
+  font-weight: bold;
+  color: #444;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  transition: border-color 0.3 ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus{
+  border-color: #6c7cfa;
+  outline: navy;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(108, 124, 250, 0.4);
+}
+
+textarea{
+  resize: vertical;
+  min-height: 120px;
+}
+
+input::placeholder, textarea::placeholder{
+   color: #aaa;
+   font-style: italic;
+}
+
+button{
+  background-color: #6c7cfa;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover{
+  background-color: #5967d2;
+  transform:  scale(1.05);
+}
+
+/* button:active{
+  transform: scale(1.05);
+} */
+
+/* preview */
+.preview{
+  margin-top: 40px ;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+  color: #333;
+}
+
+.preview h2{
+  margin-top: 0;
+  color: #444;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #6c7cfa;
+  margin-bottom: 20px;
+  
+}
